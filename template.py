@@ -8,9 +8,8 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 list_of_files = [
     '.github/workflows/.gitkeep',
     'data/.gitkeep',
-    'model/.gitkeep',
-    'src/app/__init__.py',
-    'src/app/utils/common.py',
+    'models/.gitkeep',
+    'app.py'
     'requirements.txt',
     'notebooks/trials.ipynb',
     'templates/index.html',

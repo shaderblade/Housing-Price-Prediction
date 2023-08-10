@@ -1,0 +1,9 @@
+pandas
+notebook
+numpy
+matplotlib
+seaborn
+scipy
+Flask
+Flask-Cors
+-e .
