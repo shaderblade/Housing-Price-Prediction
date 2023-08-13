@@ -6,4 +6,6 @@ seaborn
 scipy
 Flask
 Flask-Cors
+scikit-learn
+xgboost
 -e .
