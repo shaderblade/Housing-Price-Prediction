@@ -1,11 +1,11 @@
 # Housing Price Prediction Web App
 
-This web application allows users to predict housing prices based on various input parameters such as location, area, number of bathrooms, and BHK (bedroom, hall, kitchen). The prediction is made using a machine learning model trained on housing data.
+This web application allows users to predict housing prices in Bangalore based on various input parameters such as location, area, number of bathrooms, and BHK (bedroom, hall, kitchen). The prediction is made using a machine learning model trained on housing data specific to Bangalore.
 
 ## Features
 
 - Input form to specify location, area, number of bathrooms, and BHK.
-- Dynamic selection of predefined locations.
+- Dynamic selection of predefined Bangalore locations.
 - Display of predicted price based on user inputs.
 - User-friendly interface.
 
