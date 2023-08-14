@@ -24,7 +24,7 @@ This web application allows users to predict housing prices in **Bangalore** bas
 2. Navigate to the project directory:
 
     ```bash
-    cd housing_price_prediction_project
+    cd Housing-Price-Prediction
     ```
 
 3. Install the required Python packages:
