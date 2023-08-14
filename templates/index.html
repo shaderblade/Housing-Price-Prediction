@@ -7,6 +7,7 @@
     <!-- Add CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
     <div class="container mt-5">
@@ -37,10 +38,24 @@
             <button type="submit" class="btn btn-primary">Predict Price</button>
         </form>
 
-        <!-- Display predicted price if available -->
-        {% if predicted_price %}
-            <h2 class="mt-4">Predicted Price: ₹ {{ predicted_price }}</h2>
+        <!-- Display selected specifications and predicted price -->
+        {% if selected_specs %}
+            <div class="custom-card mt-4">
+                <div class="card-body">
+                    <h2 class="card-title">Prediction:</h2>
+                    <ul class="list-unstyled">
+                        <li class="card-text"><strong>Location:</strong> {{ selected_specs['location'] }}</li>
+                        <li class="card-text"><strong>Area:</strong> {{ selected_specs['area'] }} sq ft</li>
+                        <li class="card-text"><strong>Number of Bathrooms:</strong> {{ selected_specs['bathrooms'] }}</li>
+                        <li class="card-text"><strong>BHK:</strong> {{ selected_specs['bhk'] }}</li>
+                        {% if predicted_price %}
+                            <li class="highlight-text">Predicted Price: ₹ {{ predicted_price }}</li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
         {% endif %}
+
     </div>
 
     <!-- JS script  -->

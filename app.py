@@ -33,6 +33,7 @@ def predict_price(location, area, bathroom, bhk):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     predicted_price = None
+    selected_specs = None
     
     if request.method == 'POST':
         # Get user inputs from the form
@@ -42,8 +43,14 @@ def index():
         bhk = int(request.form['bhk'])
         
         predicted_price = predict_price(location, area, bathrooms, bhk)
+        selected_specs = {
+            'location': location,
+            'area': area,
+            'bathrooms': bathrooms,
+            'bhk': bhk
+        }
     
-    return render_template('index.html', locations=locations, predicted_price=predicted_price)
+    return render_template('index.html', locations=locations, predicted_price=predicted_price, selected_specs=selected_specs)
 
 if __name__ == '__main__':
     app.run(debug=True)
