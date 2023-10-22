@@ -14,7 +14,6 @@ list_of_files = [
     'notebooks/trials.ipynb',
     'templates/index.html',
     'static/css/index.css',
-    'static/js/index.js',
     'static/images/.gitkeep'
 ]
 
